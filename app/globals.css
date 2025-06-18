@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+  
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .banking-gradient {
+    @apply bg-gradient-to-br from-banking-600 via-banking-700 to-banking-800;
+  }
+  
+  .glass-morphism {
+    @apply backdrop-blur-lg bg-white/10 dark:bg-gray-800/10 border border-white/20 dark:border-gray-700/20;
+  }
+  
+  .card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .dark .card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  /* Ultra-modern small font sizes */
+  h1 { @apply text-lg md:text-2xl; }
+  h2 { @apply text-base md:text-lg; }
+  h3 { @apply text-sm md:text-base; }
+  h4 { @apply text-xs md:text-sm; }
+  p { @apply text-xs md:text-sm; }
+  .hero-title { @apply text-2xl md:text-3xl; }
+  
+  /* Modern glassmorphism effects with dark mode */
+  .glass-card {
+    @apply backdrop-blur-xl bg-white/80 dark:bg-gray-800/80 border border-white/20 dark:border-gray-700/20 shadow-2xl;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-banking-600 to-banking-800 dark:from-banking-400 dark:to-banking-600 bg-clip-text text-transparent;
+  }
+  
+  .modern-button {
+    @apply bg-gradient-to-r from-banking-600 to-banking-700 hover:from-banking-700 hover:to-banking-800 dark:from-banking-500 dark:to-banking-600 dark:hover:from-banking-600 dark:hover:to-banking-700 text-white font-medium text-sm px-6 py-2.5 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  }
+  
+  .outline-button {
+    @apply border border-banking-600/30 dark:border-banking-400/30 text-banking-700 dark:text-banking-300 hover:bg-banking-50 dark:hover:bg-banking-900/20 font-medium text-sm px-6 py-2.5 rounded-xl transition-all duration-300 backdrop-blur-sm;
+  }
+  
+  /* Dark mode specific components */
+  .dark-card {
+    @apply bg-gray-800/50 dark:bg-gray-800/80 border border-gray-200/20 dark:border-gray-700/30 backdrop-blur-xl;
+  }
+  
+  .dark-input {
+    @apply bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:ring-banking-500 dark:focus:ring-banking-400 focus:border-banking-500 dark:focus:border-banking-400;
+  }
+  
+  .dark-text {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+  
+  .dark-text-secondary {
+    @apply text-gray-600 dark:text-gray-400;
+  }
+  
+  .dark-text-muted {
+    @apply text-gray-500 dark:text-gray-500;
+  }
+  
+  .dark-bg {
+    @apply bg-white dark:bg-gray-900;
+  }
+  
+  .dark-bg-secondary {
+    @apply bg-gray-50 dark:bg-gray-800;
+  }
+  
+  .dark-border {
+    @apply border-gray-200 dark:border-gray-700;
+  }
+  
+  /* Theme toggle button */
+  .theme-toggle {
+    @apply p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-100 transition-all duration-300;
+  }
+  
+  /* Gradient backgrounds for dark mode */
+  .dark-gradient-bg {
+    @apply bg-gradient-to-br from-gray-50/50 via-white to-banking-50/20 dark:from-gray-900/50 dark:via-gray-900 dark:to-gray-800/20;
+  }
+  
+  /* Status indicators */
+  .status-verified {
+    @apply bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400;
+  }
+  
+  .status-pending {
+    @apply bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400;
+  }
+  
+  .status-inactive {
+    @apply bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400;
+  }
+} 
