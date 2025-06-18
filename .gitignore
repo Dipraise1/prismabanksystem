@@ -18,6 +18,7 @@ out/
 # Database
 *.db
 *.sqlite
+prisma/dev.db
 
 # IDE
 .vscode/
