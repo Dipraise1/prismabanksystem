@@ -217,18 +217,7 @@ vercel
    - Monitor system resources
    - Review security alerts
 
-## 🆘 Support
 
-For deployment support:
-1. Check the [Issues](https://github.com/yourusername/bankbroker/issues) section
-2. Contact support at support@bankbroker.com
-3. Join our Discord community
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
 
 - Built with Next.js and React
 - Styled with Tailwind CSS
